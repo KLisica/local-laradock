@@ -1,0 +1,24 @@
+{
+	"authHost": "http://d4b6-95-178-176-164.ngrok.io",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "testID",
+			"key": "0eb6be7bf551351b5e436fba69c88cf2"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {
+			"port": "6379",
+			"host": "redis"
+		}
+	},
+	"devMode": true,
+	"host": null,
+	"port": "6001",
+	"protocol": "http",
+	"socketio": {},
+	"sslCertPath": "",
+	"sslKeyPath": ""
+}
