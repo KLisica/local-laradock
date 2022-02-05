@@ -74,7 +74,7 @@ LARAVEL_ECHO_SERVER_CHANNEL='user-online.'
 
 <br />
 
-### ⭐ Creating a new database table in Postrges
+### ⭐ Creating a new database table in Postrge
 
 ``` shell
 docker-compose exec postgres bash
@@ -84,4 +84,10 @@ CREATE DATABASE database_name;
 # Exit postgres bash.
 exit
 exit
+```
+
+### Importing local dump to Postgre database
+
+``` shell
+docker exec -i 3b95cce20284 psql -h localhost -U default -d database_name < /path/to/dump.sql
 ```
